@@ -1,0 +1,11 @@
+8.1
+a)  The defining property of Gaussian noise is to create digital noise having the probability density function, 
+    which is normally distributed and thus it is good for testing algorithms because of the Central Limit Theorem states
+    that normally distributed signals are common in nature and this is also shown in the resulting probability density
+    function which becomes a Gaussian.
+
+b)  A low-pass filter lets all frequencies under the adjusted frequency pass. For all frequencies above, their 
+    amplitude is reduced or damped. 
+
+c)  A moving average filter is a low-pass filter. Because it takes the average of a specific amount of input signals
+    to create a signal point and therefore removing the high-frequency components from it.
