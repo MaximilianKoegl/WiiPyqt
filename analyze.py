@@ -25,8 +25,12 @@ class NormalVectorNode(Node):
     def process(self, **kwds):
         x = kwds['dataInX'][len(kwds['dataInX'])-1]-500
         z = kwds['dataInZ'][len(kwds['dataInZ'])-1]-500
-
-        return {'dataOut': np.array([(0, 0), (x*20, z*20)])}
+        grad = np.arccos((x)/np.sqrt(x*x+z*z))
+        new_x = np.cos(grad)*1000
+        new_z = np.sin(grad)*1000
+        if z < 0:
+            new_z = -new_z
+        return {'dataOut': np.array([(0, 0), (new_x, new_z)])}
 
 fclib.registerNodeType(NormalVectorNode, [('Data',)])
 
