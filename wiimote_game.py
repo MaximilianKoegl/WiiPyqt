@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Workload evenly distributed 
+# Workload evenly distributed
 # for Jan and Maxi
 
 from PyQt5 import QtGui, QtCore, QtWidgets

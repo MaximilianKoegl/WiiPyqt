@@ -9,7 +9,7 @@ import wiimote
 from wiimote_node import WiimoteNode, BufferNode
 import sys
 
-# Workload evenly distributed 
+# Workload evenly distributed
 # for Jan and Maxi
 
 
@@ -138,6 +138,6 @@ if __name__ == '__main__':
     fc.connectTerminals(bufferNodeX['dataOut'], logNode['dataInX'])
     fc.connectTerminals(bufferNodeY['dataOut'], logNode['dataInY'])
     fc.connectTerminals(bufferNodeZ['dataOut'], logNode['dataInZ'])
-    
+
     win.show()
     QtGui.QApplication.instance().exec()
