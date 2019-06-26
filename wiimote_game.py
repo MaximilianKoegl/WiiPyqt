@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-# Written by Maximilian Koegl
+# Workload evenly distributed 
+# for Jan and Maxi
 
 from PyQt5 import QtGui, QtCore, QtWidgets
 import wiimote
