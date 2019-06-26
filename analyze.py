@@ -9,6 +9,9 @@ import wiimote
 from wiimote_node import WiimoteNode, BufferNode
 import sys
 
+# Workload evenly distributed 
+# for Jan and Maxi
+
 
 class NormalVectorNode(Node):
 
